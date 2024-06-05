@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="600" src="https://github.com/devsoutinho/aulas-monorepos.qualidade.dev/assets/13791385/8df19958-0020-4e41-9c57-c6a0aa71307a" />
+   <img width="600" src="https://github.com/devsoutinho/aulas-monorepos.qualidade.dev/assets/13791385/4c3aa029-f3af-464c-8cb4-b89035873ed0" />
 </p>
 
 
