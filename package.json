@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "commons/*"
   ],
   "scripts": {
     "front": "npm exec --workspace=company-front",
     "dev:front": "npm run front -- npm run dev",
     "server": "npm exec --workspace=company-server",
-    "dev:server": "npm run server -- npm run dev"
+    "dev:server": "npm run server -- npm run dev",
+    "demo": "echo 'ola pessoas'"
   },
   "keywords": [],
   "author": "",
