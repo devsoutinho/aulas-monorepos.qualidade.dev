@@ -12,9 +12,13 @@
     "dev:front": "npm run front -- npm run dev",
     "server": "npm exec --workspace=company-server",
     "dev:server": "npm run server -- npm run dev",
+    "dev": "concurrently -c red,blue -n 'front','server' 'npm run dev:front' 'npm run dev:server'",
     "demo": "echo 'ola pessoas'"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
