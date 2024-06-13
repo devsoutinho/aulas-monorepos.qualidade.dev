@@ -1,0 +1,19 @@
+{
+  "name": "@devsoutinho/commons-lint",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.4.0",
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.4.0",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.4.0",
+    "typescript-eslint": "^7.13.0"
+  }
+}

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint './**/*.{jsx,tsx,js,ts}'",
     "start": "ts-node ./index.ts",
     "dev": "nodemon ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +16,7 @@
     "@devsoutinho/commons-http-client": "*"
   },
   "devDependencies": {
+    "@devsoutinho/commons-lint": "*",
     "@types/node": "^20.14.2",
     "nodemon": "^3.1.3",
     "ts-node": "^10.9.2",

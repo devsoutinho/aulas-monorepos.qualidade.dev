@@ -15,6 +15,7 @@
     "dev": "concurrently -c red,blue -n 'front','server' 'npm run dev:front' 'npm run dev:server'",
     "generator": "npm exec --workspace=@devsoutinho/generator",
     "gen": "npm run generator -- npm run gen",
+    "lint": "npm run lint --workspaces --if-present",
     "demo": "echo 'ola pessoas'"
   },
   "keywords": [],
