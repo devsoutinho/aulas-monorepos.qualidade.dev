@@ -16,6 +16,7 @@
     "generator": "npm exec --workspace=@devsoutinho/generator",
     "gen": "npm run generator -- npm run gen",
     "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present",
     "demo": "echo 'ola pessoas'"
   },
   "keywords": [],
