@@ -1,0 +1,15 @@
+name: "[CI] Continuous Integration"
+
+# Quando vamos rodar?
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+# Quais tarefas queremos executar?
+jobs:
+  # Tarefa
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+        - name: "Teste!"
+          run: "echo 'Olá mundo!'"
