@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint './**/*.{jsx,tsx,js,ts}'",
     "dev": "next dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -18,9 +18,10 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@devsoutinho/commons-test": "*",
     "@devsoutinho/commons-lint": "*",
-    "typescript": "^5.4.5",
     "@types/node": "^20.14.1",
-    "@types/react": "^18.3.3"
+    "@types/react": "^18.3.3",
+    "typescript": "^5.4.5"
   }
 }

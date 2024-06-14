@@ -1,0 +1,20 @@
+{
+  "name": "@devsoutinho/commons-test",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "lint": "eslint './**/*.{jsx,tsx,js,ts}'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@devsoutinho/commons-lint": "*",
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
