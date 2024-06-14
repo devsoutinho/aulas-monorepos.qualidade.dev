@@ -5,6 +5,10 @@ on:
   pull_request:
     types: [opened, synchronize]
 
+# Variáveis reusáveis do projeto
+env:
+  NODE_VERSION: 20.14.0
+
 # Quais tarefas queremos executar?
 jobs:
   # Tarefa
@@ -13,9 +17,14 @@ jobs:
     steps:
         # [Common CI/CD Setep]
         - uses: actions/checkout@v3
+        - uses: actions/setup-node@v4
+          with:
+            node-version: ${{ env.NODE_VERSION }}
+            cache: "npm"
+            cache-dependency-path: ./package-lock.json
         # ====================
         - name: "Install Dependencies"
-          run: "npm install"
+          run: "npm ci --prefer-offline"
         - name: "Lint"
           run: "npm run lint"
   # Tarefa
@@ -24,8 +33,13 @@ jobs:
     steps:
         # [Common CI/CD Setep]
         - uses: actions/checkout@v3
+        - uses: actions/setup-node@v4
+          with:
+            node-version: ${{ env.NODE_VERSION }}
+            cache: "npm"
+            cache-dependency-path: ./package-lock.json
         # ====================
         - name: "Install Dependencies"
-          run: "npm install"
+          run: "npm ci --prefer-offline"
         - name: "Test"
           run: "npm run test"
