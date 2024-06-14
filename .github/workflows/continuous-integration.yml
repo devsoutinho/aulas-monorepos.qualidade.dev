@@ -11,5 +11,5 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-        - name: "Teste!"
-          run: "echo 'Olá mundo!'"
+        - name: "Lint"
+          run: "npm run lint"
