@@ -1,0 +1,31 @@
+name: "[CI] Continuous Integration"
+
+# Quando vamos rodar?
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+# Quais tarefas queremos executar?
+jobs:
+  # Tarefa
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+        # [Common CI/CD Setep]
+        - uses: actions/checkout@v3
+        # ====================
+        - name: "Install Dependencies"
+          run: "npm install"
+        - name: "Lint"
+          run: "npm run lint"
+  # Tarefa
+  test:
+    runs-on: ubuntu-latest
+    steps:
+        # [Common CI/CD Setep]
+        - uses: actions/checkout@v3
+        # ====================
+        - name: "Install Dependencies"
+          run: "npm install"
+        - name: "Test"
+          run: "npm run test"
