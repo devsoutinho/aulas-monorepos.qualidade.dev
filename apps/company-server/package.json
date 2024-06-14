@@ -7,7 +7,7 @@
     "lint": "eslint './**/*.{jsx,tsx,js,ts}'",
     "start": "ts-node ./index.ts",
     "dev": "nodemon ./index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "@devsoutinho/commons-http-client": "*"
   },
   "devDependencies": {
+    "@devsoutinho/commons-test": "*",
     "@devsoutinho/commons-lint": "*",
     "@types/node": "^20.14.2",
     "nodemon": "^3.1.3",

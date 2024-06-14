@@ -10,8 +10,10 @@
   "scripts": {
     "front": "npm exec --workspace=company-front",
     "dev:front": "npm run front -- npm run dev",
+    "test:front": "npm run front -- npm run test",
     "server": "npm exec --workspace=company-server",
     "dev:server": "npm run server -- npm run dev",
+    "test:server": "npm run server -- npm run test",
     "dev": "concurrently -c red,blue -n 'front','server' 'npm run dev:front' 'npm run dev:server'",
     "generator": "npm exec --workspace=@devsoutinho/generator",
     "gen": "npm run generator -- npm run gen",
