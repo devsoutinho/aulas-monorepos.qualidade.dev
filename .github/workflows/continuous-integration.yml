@@ -15,8 +15,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-        # [Common CI/CD Setep]
+        # [Common CI/CD Setup]
         - uses: actions/checkout@v3
+          with:
+            fetch-depth: 2
         - uses: actions/setup-node@v4
           with:
             node-version: ${{ env.NODE_VERSION }}
@@ -31,8 +33,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-        # [Common CI/CD Setep]
+        # [Common CI/CD Setup]
         - uses: actions/checkout@v3
+          with:
+            fetch-depth: 2
         - uses: actions/setup-node@v4
           with:
             node-version: ${{ env.NODE_VERSION }}
