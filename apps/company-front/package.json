@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Mario Souto (DevSoutinho)",
+  "author": "Mario Souto",
   "license": "ISC",
   "dependencies": {
     "@devsoutinho/commons-http-client": "*",
