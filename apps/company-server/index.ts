@@ -1,7 +1,7 @@
 import http from "http";
 import { httpClient } from "@devsoutinho/commons-http-client";
 
-console.log("Node JS!");
+console.warn("Node JS!");
 
 http.createServer(async (_,res) => {
   const githubPayload = await httpClient.get("https://api.github.com/users/omariosouto")
