@@ -19,13 +19,14 @@
     "gen": "npm run generator -- npm run gen",
     "lint": "npm run lint --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
-    "test-changed": "npx tsx ./_scripts/run-on-changed-packages.ts 'npm run test'",
+    "test-changed": "tsx ./_scripts/run-on-changed-packages.ts 'npm run test'",
     "demo": "echo 'ola pessoas'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "tsx": "^4.15.4"
   }
 }
