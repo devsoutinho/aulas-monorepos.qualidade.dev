@@ -45,6 +45,26 @@ function commonPackage(plop: NodePlopAPI) {
         type: "add",
         path: path.resolve(ROOT_MONOREPO, "commons", "{{lowerCase packageName}}", "jest.config.ts"),
         templateFile: "templates/common-package/jest.config.ts.hbs"
+      },
+      {
+        type: "add",
+        path: path.resolve(ROOT_MONOREPO, "commons", "{{lowerCase packageName}}", "tsconfig.json"),
+        templateFile: "templates/common-package/tsconfig.json.hbs"
+      },
+      {
+        type: "add",
+        path: path.resolve(ROOT_MONOREPO, "commons", "{{lowerCase packageName}}", "index.ts"),
+        templateFile: "templates/common-package/index.ts.hbs"
+      },
+      {
+        type: "add",
+        path: path.resolve(ROOT_MONOREPO, "commons", "{{lowerCase packageName}}", "index.test.ts"),
+        templateFile: "templates/common-package/index.test.ts.hbs"
+      },
+      {
+        type: "add",
+        path: path.resolve(ROOT_MONOREPO, "commons", "{{lowerCase packageName}}", "README.md"),
+        templateFile: "templates/common-package/README.md.hbs"
       }
     ]  // Executar ações em cima dessas perguntas
 	});
