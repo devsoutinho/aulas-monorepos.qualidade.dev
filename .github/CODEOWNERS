@@ -1,7 +1,7 @@
 # Code Owners
 
-## Owner of specific folder
-.github/ @Allyhere
+## Owner of specific folder and files inside it
+.github/* @jessilyneh @Allyhere
 
-## Owner Of ALL Files without owners
-* @omariosouto
+## Owner of specific file
+README.md @omariosouto
